@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+#seccion3{
+    background-image: url(img/cesped.jpg);
+    padding: 140px 95px;
+}
+h2{
+    font-size: 35px;
+    letter-spacing: 0.05em;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+}
