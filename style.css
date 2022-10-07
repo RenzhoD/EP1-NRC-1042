@@ -1,15 +1,624 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root{
+    --color1:#333333;
+    --color2:#565656;
+    --color3:#777;
+    --color4:#6ab42f;
+    --color5:rgb(248, 248, 248);
+    --color6:#fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nuevo{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+figure {
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target] { /*Asi se selecciona un objeto por su atributo*/
+    overflow: hidden;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+
+.hijo{
+    color: white;
+    position: absolute;
+    padding-top: 145px;
+    padding-left: 120px;
+}
+
+.hijo h1{
+    font-family: 'Montserrat', sans-serif;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+    white-space: nowrap;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: inherit;
+    line-height: 62px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    font-size: 52px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50%;
+    transform: perspective(600px);
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#Servicios{
+    background-color:  rgb(248, 248, 248);
+}
+
+.imagenes-sombra figure{
+    position: relative;
+    cursor: pointer;
+}
+
+.imagenes-sombra figure figcaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(106, 180, 47, 0.33);
+    display: none;
+    color: var(--color6);
+    
+}
+
+.imagenes-sombra figure figcaption div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+}
+
+.imagenes_compra figure{
+    position: relative;
+}
+
+.imagenes_compra figure figcaption{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(103, 175, 45, 0.6);
+    display: none;
+    color: var(--color6);
+}
+.imagenes_compra figure figcaption div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    flex-direction: column;
+}
+
+.imagenes_compra figure figcaption div i{
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    display: inline-block;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 100%;
+    line-height: 34px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    margin: 4px;
+    transition: all 0.25s ease 0s;
+
+}
+.imagenes_compra figure figcaption div i:hover{
+    color: var(--color4);
+}
+
+
+
+
+#main-footer{
+    background-color: var(--color1);
+    color: #fff;
+    padding: 45px 0px;
+}
+/***************************************<!--seccion-Jeanpol-pimera-->*****/
+.principal{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.principal-1{
+    text-align: center;
+    margin-bottom: 96px;
+}
+.principal-1 i{
+    font-size: 40px;
+    color: var(--color4);
+    margin-bottom: 10px;
+}
+.principal-1-titulo{
+    font-size: 40px;
+    color: var(--color1);
+    text-align: center;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0;
+}
+.sub-titulo{
+    color: var(--color3);
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    margin-top: 7px;
+    padding-bottom: 2px;
+   
+}
+.principal-2{
+    margin-bottom: 60px;
+}
+
+.primera-columna{
+    padding-left: 0;
+    padding-right: 0;
+}
+.segunda-columna{
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.layout1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.icon-1{
+    width: 112px;
+    height: 112px;
+    border: 1px solid #6ab42f;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    transition: all 0.25s ease 0s;
+}
+.icon-1:hover{
+    box-shadow: 0 0 24px 2px rgba(0, 0, 0, 0.25);
+}
+.icon-1 img{
+    border-radius: 100%;
+    max-width: 100%;
+}
+.texto-1{
+    padding-top: 22px;
+}
+.texto-1 a{
+    color:var(--colo2);
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    outline: none;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 22px;
+}
+.sub-titulo-1 h3{
+    margin-top: 0;
+    margin-bottom: 22px;
+    display: inline-block;
+    color: #565656;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.25s ease 0s;
+    margin-bottom: 0;
+}
+.sub-titulo-1 h3:hover{
+    color: var(--color4);
+}
+.texto-1-parrafo{
+    color: var(--color3);
+    font-size: 15px;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.principal-3{
+    margin-left: -15;
+    margin-right: -15;
+}
+.div-1{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.colum-inner{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+    .padded-smal{
+        margin: 10px 0;
+    }
+}
+
+/**servicios**/
+/****************************************<!--seccion-Jeanpol-segunda-->*******/
+.shopping{
+    background-image: url(../images/fonfo-difuminado.jpg);
+    background-size: cover;
+    background-position:center;
+    color: var(--color-blanco);
+    
+}
+.div-3-1{
+    
+    box-sizing: border-box;
+    padding: 84px 15px 70px;
+}
+.titulo-3{
+    text-align: center;
+}
+.titulo-3 i{
+    color: var(--color4);
+    font-size: 40px;
+    
+}
+.titulo-3-1{
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0;
+    
+}
+.sub-titulo-3-1{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    margin-top: 7px;
+    font-style: italic;
+    padding-bottom: 2px;
+    display: block;
+}
+.padded-3{
+    padding: 40px 0;
+}
+.cards-contenedor{
+    margin-bottom: 15px;
+}
+.cards-contenedor-1{
+    display: block;
+}
+.wrap-images{
+    width: 100%;
+}
+@media screen and (max-width:1190px) {
+    .padded-smal-2{
+        margin: 13px 0px;
+    }
+}
+.wrap-info{
+    background-color: #fff;
+    padding: 26px 15px 23px;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    border-top: 1px solid rgba(106, 180, 47, 0.25);
+}
+.wrap-info a:hover{
+    color: var(--color4);
+}
+.padded-cards{
+    margin-top: 16px;
+    margin-bottom: 64px;
+    padding: 35px 0 20px;
+}
+.wrap-images img{
+    background-color: #fff;
+    border-radius: 3px 3px 0px 0px;
+    
+}
+.link-producto{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #565656;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    display: block;
+    margin-bottom: 7px;
+    text-decoration: none;
+}
+.precio{
+    color: #6ab42f;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    margin-bottom: 9px;
+}
+.star-1{
+    margin: 0;
+    font-size: 13px;
+    display: block;
+    color: var(--color4);
+}
+.text-center{
+    text-align: center;
+}
+.btn-shopping{
+    color: #fff;
+    transition: all 0.25s ease 0s;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 5px 4px;
+    display: inline-block;
+    border: 2px dashed #fff;
+    background-color: transparent;
+    height: 41px;
+    line-height: 37px;
+    width: 245px;
+}
+.text-center .btn-shop-iz{
+    border-radius: 50px 0 0 50px;
+}
+.text-center .btn-shop-de{
+    border-radius: 0 50px 50px 0;
+}
+@media screen and (max-width: 1199px) {
+    .text-center .btn-shop-iz{
+        border-radius: 0;
+    }
+    .text-center .btn-shop-de{
+        border-radius: 0;
+    }
+}
+.btn-shopping:hover{
+    color: var(--color4);
+    background-color: #fff;
+    cursor: pointer;
+}
+
+/*Seccion 3 y 4*/
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
-#seccion3{
+#Jardin{
     background-image: url(img/cesped.jpg);
-    padding: 140px 95px;
+    background-size: cover;
+    padding-top: 145px;
+    padding-bottom: 149px;
+    padding-left: 93px;
 }
-h2{
+#Jardin h2{
     font-size: 35px;
     letter-spacing: 0.05em;
     color: white;
     font-weight: 700;
     font-style: normal;
+}
+#Jardin p{
+    padding-top: 0;
+    padding-bottom: 31px;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#Trabajo{
+    background-image: url(img/sembrar.jpg);
+    background-size: cover;
+    color: white;
+    padding: 82px 98px;
+}
+
+#Trabajo h3{
+    font-size: 35px;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 17px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#Trabajo p{
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 31px;
+    margin-bottom: 47px;
+}
+
+#Trabajo a{
+    height: 46px;
+    border: 1px solid white;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0 25px;
+    display: inline-block;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+.cajabotones a{
+    height: 46px;
+    border: 1px solid white;
+    letter-spacing: 0.05em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 44px;
+    padding: 0 25px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 3px;
+}
+.boton2{
+    color: rgb(106, 180, 47);
+    background-color: rgba(255, 255, 255, 0.932);
+}
+.boton3{
+    color: white;
+    background-color: transparent;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+#main-footer{
+    background-color: #333;
+    color: #999;
+    padding: 40px 85px;
+}
+
+.contenedor2{
+    padding-left: 0;
+}
+
+span{
+    color: rgb(106, 180, 47);
+}
+
+.contenedor2 p{
+    padding: 0;
+    text-align: left;
+}
+
+.contenedor2 img{
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    margin-top: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.pie-pagina h2{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+    margin-top: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.pie-pagina a{
+    display: inline-block;
+    color: #999;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+}
+
+a:hover{
+    color: #6ab42f;
+}
+
+.lista li{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 33px;
+}
+
+.col div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contenedorfoto2{
+    height: 100px;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+
+.contenedorfoto2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#botton-footer{
+    border-top: 1px solid #6ab42f;
+    border-left:500px;
+    padding-top: 36px;
+    padding-bottom: 0;
+}
+
+.contenedormaster{
+    padding: none;
+    padding-bottom: 40px;
 }
